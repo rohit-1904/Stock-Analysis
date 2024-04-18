@@ -5,6 +5,12 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 import plotly.graph_objects as go
 import plotly.express as px
+import subprocess
+
+# Install scikit-learn using pip
+subprocess.check_call(["pip", "install", "scikit-learn"])
+
+
 
 # Set page title
 st.title('Stock Price Prediction')
